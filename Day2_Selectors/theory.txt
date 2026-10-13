@@ -1,0 +1,42 @@
+Agenda of todays class
+
+Selectors
+why we need Selectors
+Types of Selectors
+-----------------------------------------------------------------------------------------
+Seeltors: This is used to select an Html element and can style iy using css
+
+to chneg the color of the text, set an heoight and width of an image, to add animations/transfrom,etc,..
+
+----------------------------------------------------------------------------------
+Types of Selectors
+These are classifid into 4 main categories
+
+1. Basic Selectors
+2. Combinator/Relation-ship Selectors
+3. Pseudo Selectors
+4. Attribute Selectors
+
+1. Basic selectors:
+  these are classified into 5 selectors
+  1. universal - *
+  2. Id    - #
+  3. class   - .
+  4. Tag- tname of the tag
+  5. Group - ,
+
+
+  declartion: {
+
+  }
+
+
+synatx:
+
+selector{
+    property_name: propertyVlaue;
+    property_name2:propertyVlaue2;
+
+}
+
+  

@@ -1,0 +1,53 @@
+Agenda
+What is Css
+History of Css
+Features of Css
+In how many ways we can implement css
+
+--------------------------------------------------------------------------------
+1. Css(Cascading style sheets)
+Cascading- The priority
+
+
+History of css
+Hakon Wium lie -1994
+1996- css1- published-fonts,text,color
+1998-css2- mediatype,control over laytouts
+2011- css 2.1
+2012-css3-flexbox,grident,Graidents,etc..
+------------------------------------------------------------------------------------------
+Features
+styling - font size,color,bckground,boder,etc....
+Reusablity
+Separation of the conten and presentation
+Animations
+Mediaquires(Responsiveness)
+-----------------------------------------------------------------------------------
+In 3 ways we can write the css
+1. Inline
+2. Internal
+3. external
+
+Inline-
+This is used inside the tag with an attributed called "style"
+synatx : <h1 style= "propertyname:propertyvalue;propertyname2:propertyvalue2;"
+
+
+
+
+drawback:
+no of lines will increase
+page optimization 
+
+
+Interanl css
+using th style tage we define the styles for the elemnt(head section)
+
+syntax:
+<style>
+   selector{
+    propertyname: propertyvalue;
+    propertyname1:proertyvalue2;
+   }
+</style>
+

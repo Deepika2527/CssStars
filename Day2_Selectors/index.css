@@ -1,0 +1,57 @@
+*{
+    background-color: rgb(180, 180, 155);
+    /* font-family: monospace; */
+}
+#head{
+    font-size: 36px;
+    text-align: center;
+    color: blue;
+}
+
+.header, .footer, .products{
+    border: 1px solid black;
+    height:200px;
+    width: 200px;
+    display: inline-block;
+    margin: 50px;
+    padding: 30px;
+}
+/* .footer{
+    border: 1px solid black;
+
+}
+.products{
+    border: 1px solid black;
+} */
+
+.cards{
+    border: 1px solid black;
+   height: 100px;
+   background-color: palegoldenrod;
+}
+
+#firsthead{
+    background-color: rosybrown;
+}
+#secondhead{
+    background-color: blue;
+}
+#thirdhead{
+    background-color: purple;
+}
+/* *{
+    background-color: yellowgreen;
+} */
+ /* #firsthead, #secondhead,#thirdhead
+ {
+
+   background-color: greenyellow;
+ } */
+
+/* ul {
+    list-style: none;
+} */
+
+/* li{
+    list-style: none;
+} */
