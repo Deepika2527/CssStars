@@ -1,0 +1,9 @@
+Create 4 cards(cards) under 1 main parent class name parent
+cards : border radius:10%
+The 4 cards shoul have  differnet background
+Each card should have a different heading using h3/h4
+under h3 create and ul/ol and have 3/4 subtopics and use sibiling selectors
+
+use descand,child selector,group,tag,id,class,univervsal,general sibling,adjancent sibling
+
+
