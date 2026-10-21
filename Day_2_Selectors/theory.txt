@@ -39,4 +39,23 @@ selector{
 
 }
 
+Combinator selectors:
+Parent-child -
+Descendand selector - space(its selets the direct and in dierct children)
+Child Selectors- > (Only Direct Children)
+
+Sibiling selectors
+General sibiling - ~ -All sibling
+Adjancent - + -the next sibling
+
+
+
+-------------------------------------------------------------------
+
+Attribute Selectors:
+-----------------------------------------------------------
+Pseudo Selectors:
+
+pseudo class and pseudo ele
+
   

@@ -1,0 +1,33 @@
+BoxModel:
+
+  content
+  padding
+  border
+  margin
+  boxsizing
+  Git hub
+  ------------------------------------------------------------------------------------------------
+
+  Content- <h1> hello</h1> -hello is an element
+
+  Padding- Gives the space around the content/element
+
+  padding : 10px - all 4 sides must be 10px(T,R,B,L)
+
+  padding- 10px 10px - tob-bottom , right-left
+  padding- 10px 20px 30px
+  10px - Top
+  20px-Rigth and left
+  30px- bottom
+
+  ---------------------------------------------------------------------------------------------
+
+  Border : lies between the margin and the padding
+
+  border: border-width border-style border color
+  short-hand propert
+
+  border-width: 10px,20px,etc,...
+  boder-style: solid,dashed,groove,inset,dotted,...
+  boder-color:
+  boder-width-left

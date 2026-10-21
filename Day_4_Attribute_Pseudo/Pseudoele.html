@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo elem ::</title>
+
+    <style>
+        p::first-letter{
+            text-transform: uppercase;
+            color: orangered;
+            font-size: 22px;
+        }
+        p::first-line{
+            text-decoration: underline;
+        }
+
+        li::marker{
+            color: maroon;
+        }
+        p::selection{
+            background-color: blue;
+            color: lightgoldenrodyellow;
+        }
+        p::after{
+            content: "❤️❤️❤️❤️";
+        }
+        /* p::before{
+            content: "*****";
+        } */
+         #products{
+            height: 200px;
+            width: 200px;
+            /* border: 10px solid blue; */
+         }
+         #products img{
+            width: 100%;
+            display: block;
+         }
+         #products:hover::after{
+            content: "⭐⭐⭐⭐⭐'s rating 5/5";
+            /* padding:10px; */
+            
+
+         }
+    </style>
+</head>
+<body>
+
+
+    <p>lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia ab similique, expedita dignissimos blanditiis culpa suscipit laborum dolores, neque reprehenderit fuga porro minima quo illo? Quidem dolorum quod blanditiis ipsa!
+        lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia ab similique, expedita dignissimos blanditiis culpa suscipit laborum dolores, neque reprehenderit fuga porro minima quo illo? Quidem dolorum quod blanditiis ipsa!
+        lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia ab similique, expedita dignissimos blanditiis culpa suscipit laborum dolores, neque reprehenderit fuga porro minima quo illo? Quidem dolorum quod blanditiis ipsa!
+        lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia ab similique, expedita dignissimos blanditiis culpa suscipit laborum dolores, neque reprehenderit fuga porro minima quo illo? Quidem dolorum quod blanditiis ipsa!
+        lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia ab similique, expedita dignissimos blanditiis culpa suscipit laborum dolores, neque reprehenderit fuga porro minima quo illo? Quidem dolorum quod blanditiis ipsa!
+    </p>
+
+
+    <ul>
+        <li>list1</li>
+        <li>list2</li>
+        <li>list3</li>
+    </ul>
+
+
+    <div id="products">
+        <img src="https://cdn.mobilekidukaan.in/refubished/01757490621.png" alt="">
+    </div>
+    
+</body>
+</html>
