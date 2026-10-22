@@ -1,0 +1,12 @@
+Color Theory:
+
+This can be implemented in 6 ways
+1. colorName:
+2. RGB- Red green blue -Rgb - 0-255- rgb(0,0,0)
+3. Rgba - a - opacity- transprancy- 0-1
+4. hexadecimal - 16 - 0-9,a-f - 3/8- #fff, #ce5679f4
+5. hsl - 
+  Hue   - color wheel
+  Saturation - Richness of the color- %
+  Lightness- How dark or how much light it should be
+  6. hsla- a - opactity

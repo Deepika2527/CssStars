@@ -1,0 +1,46 @@
+.container{
+    border: 1px solid black;
+    height: 700px;
+    width: 1000px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+    
+  
+
+}
+.box{
+    height: 200px;
+    width: 300px;
+    border: 2px solid gray;
+    display: flex;
+     justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+/* color name */
+.box1{
+    background-color: firebrick;
+    color: whitesmoke;
+
+}
+.box2{
+    background-color: rgb(15,200,189);
+}
+.box3{
+    background-color: rgba(245, 233, 66,1);
+}
+.box4{
+    background-color: #b76e69;
+}
+.box5{
+   
+    background-color: hsl(224, 91%, 56%);
+}
+.box6{
+    background-color: rgb(212, 134, 186);
+}
