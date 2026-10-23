@@ -1,0 +1,9 @@
+Layouts:
+
+
+Display Propeties
+Display: inline,block,inline-block,flex,grid
+
+
+
+flex- Morder way to arrange the elements in the layouts - One dimension
