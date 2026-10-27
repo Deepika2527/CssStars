@@ -1,9 +1,258 @@
-Layouts:
+CSS FLEXBOX - SHORT NOTES
+=========================
+
+1. WHAT IS FLEXBOX?
+-------------------
+Flexbox (Flexible Box Layout) is a CSS layout system used to arrange items in
+a row or column and control their alignment, spacing, and size.
+
+To create a flex layout:
+.container {
+    display: flex;
+}
+
+The element with display: flex is the FLEX CONTAINER (parent).
+Its direct children become FLEX ITEMS (children).
 
 
-Display Propeties
-Display: inline,block,inline-block,flex,grid
+2. WHY USE FLEXBOX?
+-------------------
+- Align items horizontally or vertically.
+- Distribute space between items.
+- Center content easily.
+- Allow items to wrap onto multiple lines.
+- Build responsive layouts such as navbars, menus, cards, and toolbars.
+- Reduce the need for floats or complicated margin tricks.
+
+IMPORTANT:
+display: flex applies to the container's DIRECT children, not automatically
+to every nested descendant.
 
 
+3. FLEX CONTAINER (PARENT) PROPERTIES
+------------------------------------
 
-flex- Morder way to arrange the elements in the layouts - One dimension
+A. display
+   Turns an element into a flex container.
+
+   .container {
+       display: flex;
+   }
+
+B. flex-direction
+   Sets the main direction of the items.
+
+   row             -> Left to right (default)
+   row-reverse     -> Right to left
+   column          -> Top to bottom
+   column-reverse  -> Bottom to top
+
+   .container {
+       display: flex;
+       flex-direction: row;
+   }
+
+C. justify-content
+   Aligns/distributes items along the MAIN AXIS.
+
+   flex-start      -> At the start (default)
+   flex-end        -> At the end
+   center          -> Center
+   space-between   -> Space between items; no space at the outer edges
+   space-around    -> Space around each item
+   space-evenly    -> Equal spaces between items and at the edges
+
+   .container {
+       display: flex;
+       justify-content: space-between;
+   }
+
+D. align-items
+   Aligns items along the CROSS AXIS on each flex line.
+
+   stretch      -> Stretch items (default, when cross-size is auto)
+   flex-start   -> At the cross-axis start
+   flex-end     -> At the cross-axis end
+   center       -> Center
+   baseline     -> Align text baselines
+
+   .container {
+       display: flex;
+       align-items: center;
+   }
+
+E. flex-wrap
+   Controls whether items can move onto another line.
+
+   nowrap       -> One line (default)
+   wrap         -> Move items onto additional lines if needed
+   wrap-reverse -> Wrap in reverse cross-axis direction
+
+   .container {
+       display: flex;
+       flex-wrap: wrap;
+   }
+
+F. align-content
+   Aligns/distributes MULTIPLE flex lines along the cross axis.
+   It has an effect when there are multiple lines and extra cross-axis space.
+
+   Common values:
+   flex-start, flex-end, center, space-between, space-around,
+   space-evenly, stretch
+
+   IMPORTANT:
+   align-content is not the same as align-items.
+   align-items aligns items within a line; align-content aligns multiple lines.
+
+G. gap
+   Adds space between flex items (row and/or column gap).
+
+   .container {
+       display: flex;
+       gap: 16px;
+   }
+
+H. flex-flow
+   Shorthand for flex-direction and flex-wrap.
+
+   .container {
+       display: flex;
+       flex-flow: row wrap;
+   }
+
+
+4. FLEX ITEM (CHILD) PROPERTIES
+-------------------------------
+
+A. order
+   Changes the visual order of an item. Default is 0.
+   Items with lower order values appear first.
+
+   .item-special {
+       order: -1;
+   }
+
+   NOTE: Visual order may differ from keyboard and screen-reader order.
+   Do not use order to create a confusing reading sequence.
+
+B. flex-grow
+   Controls how an item grows when extra free space is available.
+   Default: 0 (does not grow).
+
+   .item {
+       flex-grow: 1;
+   }
+
+   Items with higher grow factors receive a larger share of available space.
+
+C. flex-shrink
+   Controls how an item shrinks when there is not enough space.
+   Default: 1 (items can shrink).
+
+   .item {
+       flex-shrink: 0;
+   }
+
+   Setting 0 prevents that item from shrinking due to flex sizing.
+
+D. flex-basis
+   Sets the item's initial main size before free space is distributed.
+   Default: auto.
+
+   .item {
+       flex-basis: 200px;
+   }
+
+   With flex-direction: row, basis relates to width.
+   With flex-direction: column, basis relates to height.
+
+E. flex
+   Shorthand for flex-grow, flex-shrink, and flex-basis.
+
+   .item {
+       flex: 1;
+   }
+
+   Commonly, flex: 1 allows items to share available space.
+   For precise sizing, remember that flex shorthand expands to grow, shrink,
+   and basis values; browser sizing behavior depends on the specified values.
+
+F. align-self
+   Overrides align-items for one specific item along the cross axis.
+
+   .item-special {
+       align-self: flex-end;
+   }
+
+
+5. QUICK DIFFERENCE: PARENT VS CHILD
+------------------------------------
+PARENT / CONTAINER:
+- display
+- flex-direction
+- justify-content
+- align-items
+- flex-wrap
+- align-content
+- gap
+- flex-flow
+
+CHILD / ITEM:
+- order
+- flex-grow
+- flex-shrink
+- flex-basis
+- flex
+- align-self
+
+Remember:
+- justify-content -> Main axis
+- align-items     -> Cross axis
+- align-content   -> Multiple flex lines on the cross axis
+- align-self      -> One item's cross-axis alignment
+
+
+6. SIMPLE REAL-TIME EXAMPLE: NAVBAR
+-----------------------------------
+HTML:
+
+<nav class="navbar">
+    <div class="logo">MySite</div>
+    <div class="links">
+        <a href="#">Home</a>
+        <a href="#">Courses</a>
+        <a href="#">Contact</a>
+    </div>
+</nav>
+
+CSS:
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.links {
+    display: flex;
+    gap: 16px;
+}
+
+
+7. IMPORTANT POINTS
+-------------------
+- display: flex makes the parent a flex container.
+- Only direct children become flex items.
+- The default flex-direction is row.
+- The default flex-wrap is nowrap.
+- The default justify-content is flex-start.
+- The default align-items is stretch.
+- The default flex-grow is 0.
+- The default flex-shrink is 1.
+- The default flex-basis is auto.
+- Main axis changes when flex-direction changes.
+- gap creates space between items; it is not added as padding inside items.
+- Flexbox is mainly one-dimensional: it handles a row or a column at a time.
+  CSS Grid is often better for two-dimensional row-and-column layouts.
