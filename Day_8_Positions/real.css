@@ -1,0 +1,85 @@
+header{
+    border: 1px solid black;
+    display: flex;
+    gap:40px;
+    background-color: #333;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    /* margin: 20px; */
+     top:0px;
+    left:0;
+    right: 0;
+    /* bottom:0; */
+    /* position: sticky;
+    top:0; */
+    z-index: 2;
+   
+
+}
+/* *{
+margin: 0;
+} */
+
+
+.nav{
+    border: 2px solid red;
+    display: flex;
+    gap:70px;
+    justify-content: space-around;
+    
+
+
+}
+a{
+    color: #fff;
+    text-decoration: none;
+}
+.main{
+    margin-top: 110px;
+}
+.container{
+    border: 2px solid green;
+    display: flex;
+    flex-wrap: wrap;
+    gap:80px;
+    padding: 40px;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.cards{
+    border:2px solid orange;
+    width: 400px;
+    background: linear-gradient(185deg,#ADD8E6,#B6D0E2);
+    position: relative;
+
+}
+.tags{
+    /* border: 2px solid olive; */
+    display: flex;
+    align-items: center;
+    gap:10px;
+     position: absolute;
+    top: 0px;
+    right: 0px;
+    
+/* 
+    position: absolute;
+    top:10px; */
+   
+   
+
+   
+
+}
+button{
+    background-color: orangered;
+    color:white;
+    padding: 20px;
+    border-radius: 10px;
+    position: fixed;
+    right: 0px;
+    bottom: 300px;
+    writing-mode: vertical-rl;
+}

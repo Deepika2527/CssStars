@@ -1,0 +1,39 @@
+Positions:
+When we create the elements they will be placed on the left side by deafult so if i want to move/change the elements we use Positions
+--------------------------------------------------------
+Types Of Positions
+1. Static
+2. Relative
+3. Absolute
+4. Fixed
+5. Sticky
+
+--------------------------------------------------------
+Static:
+Default Position
+--------------------------------------------------------
+Relative:
+1. In Relative the width will be completely occupied
+2. Relative will listen to the document flow
+3. It will create some space - it will presreves its own place
+4. In relative if we are using top and bottom the prioty goes for the top irrespective of the value, similary in left and right left goes the priority
+5. Relative will listen to the scroll bar
+
+--------------------------------------------------------
+3. Abosolute:
+
+1.In abs the width depends on the content
+2. This will not follow the document flow
+3. The element will move from the top of the document 
+4. If we give top and bottom it will strech similarly with left and right
+5. It will behave accordingly to the nearest ancestor
+
+
+
+--------------------------------------------------------
+4. Fixed:
+1. In fixed the width depends on the content
+2. It will not follow the documnt flow
+
+--------------------------------------------------------
+--------------------------------------------------------

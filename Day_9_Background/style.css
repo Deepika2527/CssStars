@@ -1,0 +1,64 @@
+.image{
+    /* border: 10px dotted red; */
+    padding: 10px;
+    height: 500px;
+    /* background-color: burlywood; */
+    background-image: url('https://images.pexels.com/photos/18546269/pexels-photo-18546269.jpeg');
+    /* background-position: center; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    background-attachment: fixed;
+    
+
+    
+}
+
+.linear,.radial{
+    border: 1px solid black;
+    height: 500px;
+    padding: 20px;
+     display: flex;
+     gap: 20px;
+     align-items: center;
+     justify-content: space-evenly;
+     margin: 10px;
+}
+
+.lin,.rad{
+    border: 2px solid black;
+    margin: 5px;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.lin1{
+    background: linear-gradient(firebrick,forestgreen,purple);
+}
+.lin2{
+        background: linear-gradient(to top,firebrick,forestgreen,purple);
+}
+.lin3{
+    background: linear-gradient(135deg,#ff6347,#80d5ff);
+}
+.lin4{
+    background: linear-gradient(#ff6347 20%,#aa80ff,#ffff4d 30%,#80d5ff);
+}
+.rad1{
+    background: radial-gradient(firebrick,forestgreen,purple);
+}
+.rad2{
+    background: radial-gradient(circle, firebrick,forestgreen,purple);
+}
+.circle{
+    margin: 20px;
+    height: 300px;
+    width: 500px;
+    border-radius: 10px;
+    border: 1px solid black;
+    background: repeating-linear-gradient(135deg,black 0%,black 10%,yellow 20%, yellow 30%);
+}

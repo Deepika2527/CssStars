@@ -1,0 +1,64 @@
+body{
+    background-color: lavender;
+    height: 800px;
+}
+.box{
+    border: 1px solid black;
+    margin: 5px;
+}
+.box1{
+    background-color: firebrick;
+    color: aliceblue;
+    position: static; 
+    top:100px;
+    width: 200px;
+    left: 40px;
+}
+.box2{
+    background-color: purple;
+    color: wheat;
+     width: 200px;
+    /* position: relative;
+    top:100px;
+    left:300px; */
+    /* bottom: 1000px;
+    right: 900px; */
+
+}
+/* section{
+    border: 2px solid red;
+    height: 200px;
+    position: relative;
+} */
+.box3{
+    background-color: forestgreen;
+    /* position: absolute;
+    right:0;
+    bottom: 0; */
+    /* top:0; */
+    /* bottom :100px;
+    right:20px; */
+}
+.box4{
+    background-color: rgb(89, 91, 212);
+    color: aliceblue;
+    width: 240px;
+    /* position: fixed;
+    top:80px; */
+    /* bottom: 20px; */
+    /* left:300px;
+    right: 300px; */
+    /* writing-mode: vertical-rl; */
+
+}
+.box5{
+    background-color: darkgoldenrod;
+    position: sticky;
+    width: 200px;
+    top: 90px;
+    bottom:90px;
+    left:40px;
+}
+p{
+    color: maroon;
+}
